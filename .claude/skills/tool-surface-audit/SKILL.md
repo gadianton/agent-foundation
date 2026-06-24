@@ -9,7 +9,7 @@ description: >
   fresh-context, read-only security pass: it classifies every exposed tool by
   blast-radius tier and flags anything dangerous that isn't removed or gated in
   code. Read-only — it never edits code; it reports.
-allowed-tools: Read, Grep, Glob, Bash(grep:*), Bash(rg:*), Bash(ls:*), Bash(cat:*), Bash(find:*)
+allowed-tools: Read, Grep, Glob, Bash(rg:*), Bash(ls:*)
 ---
 
 # Tool Surface Audit
@@ -87,7 +87,7 @@ HIGHER tier):
 
 ## Output format
 
-```
+```text
 # Tool Surface Audit — <target>
 
 ## Exposed surface (default profile)
